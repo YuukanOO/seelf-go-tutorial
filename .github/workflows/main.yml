@@ -1,0 +1,15 @@
+on: [push]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - id: deploy
+        name: Deploy to seelf
+        uses: YuukanOO/seelf-deploy-action@v1
+        with:
+          host: ${{ secrets.seelf_url }}
+          token: ${{ secrets.seelf_token }}
+          appid: ${{ secrets.seelf_appid }}
+      - name: Output URL
+        run: echo "Check it out at ${{ steps.deploy.outputs.url }}"
