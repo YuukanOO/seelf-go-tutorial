@@ -5,7 +5,7 @@ RUN go mod download
 COPY . .
 RUN go build -ldflags="-s -w" -o sample
 
-FROM alpine:3.16
+FROM scratch
 WORKDIR /app
 COPY --from=builder /app/sample ./
 EXPOSE 8080
