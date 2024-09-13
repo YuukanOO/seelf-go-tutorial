@@ -20,7 +20,7 @@ docker compose up -d --build --wait
 
 ### Deploying on seelf
 
-Connect on your [seelf](https://github.com/YuukanOO/seelf) instance. Check [the official documentation to deploy it](https://github.com/YuukanOO/seelf/blob/main/DOCUMENTATION.md#installation) on your own infrastructure.
+Connect on your [seelf](https://github.com/YuukanOO/seelf) instance. Check [the official documentation to deploy it](https://yuukanoo.github.io/seelf/guide/installation.html) on your own infrastructure.
 
 ![seelf home](./assets/home.png)
 
